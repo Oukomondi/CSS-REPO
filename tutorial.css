@@ -1,0 +1,51 @@
+.container{
+    height: auto;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px auto 40px;
+}
+.container > div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+  background-image: url(Gallery\favour-anyula-_riRvDikb-Y-unsplash.jpg);
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+  height: 50px;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+  height:300px;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+      height: 300px;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+      height:300px;
+}
+.header{
+    grid-column: 1/-1;
+}
+.footer{
+    grid-column: 1/-1;
+}
+
+.header-container{
+display: flex;
+background: #fff;
+}
